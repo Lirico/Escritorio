@@ -1,0 +1,55 @@
+Horas Noviembre
+
+LM0522tm:
+	- 07/11 React 7
+	- 14/11 React 8
+Total: 2 (Municipal)
+
+----------------------------
+
+Desarrollo de aplicaciones:
+	- 02/11 React 5
+	- 09/11 React 6
+	- 16/11 React 7
+	- 23/11 React 8
+Total 4 (Municipal)
+
+-----------------------------
+
+FS0522tm: 
+	- 01/11 React 4
+	- 08/11 React 5
+	- 15/11 React 6
+	- 22/11 React 7
+	- 29/11 React 8
+Total 5
+
+-----------------------------
+
+FS0522S:
+	- 05/11 React 4
+	- 12/11 React 5
+	- 19/11 React 6
+	- 26/11 React 7
+Total: 4
+
+-----------------------------
+
+0722:
+	- 04/11 React 1
+	- 11/11 React 2
+	- 18/11 React 3
+	- 25/11 React 4
+Total: 4
+
+-----------------------------
+FE1022:
+	- 07/11 HTML 1
+	- 14/11 HTML 2
+	- 21/11 CSS	1
+	- 28/11 CSS 2
+Total: 4 (Municipal)
+
+
+Total de clases del mes: 25
+Clases de suplencia: 0

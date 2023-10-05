@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --first-color: #F5F5F5;
+    --second-color: darkgray;
+    --gray-color: gray;
+    --white-color: white;
+}
+
+body {
+    background-color: var(--first-color);
+    font-size: 16px;
+}
+
+
+/*********** RESET ***********/
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/*********** UTILITIES ***********/
+.container {
+    padding: 50px 50px
+}
+.text-center {
+    text-align: center;
+}
+
+/*********** SITE STYLES ***********/
+header > .banner {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+header > .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; 
+}
+
+header > .nav-container > div {
+    display: flex;
+    align-items: center;
+}
+
+header > .nav-container > div > img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul > li {
+    margin: 0px 20px;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: var(--white-color)
+}
+
+main > h2 {
+    margin-bottom: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-color);
+}
+
+section > .section-articles {
+    display: grid;
+    grid-template-columns: 0.80fr 0.20fr;
+}
+
+section > div > h2 {
+    padding: 0 0 15px 0;
+}
+
+.section-articles > div > article {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--gray-color)
+}
+.section-articles > aside {
+    padding: 10px;
+    background-color: var(--gray-font)
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 075fr 025fr;
+    background-color: #F5F5F5;
+}
+
+.footer > div {
+    width: 95%;
+}
+
+.footer > div > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer > div > div > img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.footer > div > div > h2 {
+    font-size: 2.2rem;
+}
+
+.footer > .social-media {
+   display: flex;
+    align-items: center;
+}
+
+.footer > .social-media > ul > li {
+    margin: 10px 0;
+}

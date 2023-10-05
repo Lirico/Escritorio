@@ -1,0 +1,104 @@
+/************* PAGE STYLES **************/
+/********* HERO-REIKI **********/
+#hero-contact {
+    height: 45vh;
+}
+#hero-contact h1 {
+    color: var(--white-color);
+    font-family: var(--third-font);
+    font-size: 3rem;
+    animation: 2s ease-out 0s 1 slideInFromBottomFading;
+}
+
+@keyframes slideInFromBottomFading {
+    0% {
+      transform: translateY(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+         opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+/********* CONTACT FORM **********/
+#contact-form {
+  background-color: var(--white-color);
+  padding: 2.5rem;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+}
+.events, 
+.talks {
+  font-size: 0.95rem;
+  color: var(--gray-dark-color);
+}
+.events > h2, 
+.talks > h2 {
+  color: var(--second-darkest-darkest-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.events > dl > dd {
+  text-indent: 2rem;
+}
+.events > dl {
+  margin-bottom: 1rem
+}
+.talks > h3, .talks > h4 {
+  margin-bottom: 0.5rem
+}
+.talks > ul > li {
+  list-style: disc;
+  margin-left: 1.2rem
+}
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container > form > h3 {
+  color: var(--second-darkest-darkest-color);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.form-container > form > label {
+  margin-bottom: .6rem;
+  color: var(--gray-soft-color);
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.form-container > form > input, 
+.form-container > form > textarea {
+  padding: 1rem;
+  border: .5px solid var(--grey-light-color);
+  background-color: #FCFCFC;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: 0.1s;
+}
+.form-container > form > textarea {
+  resize: none;
+}
+.form-container > form > input:focus,
+.form-container > form > textarea:focus {
+  border: .5px solid var(--first-dark-color);
+}
+
+.form-container > form > button {
+  padding: 15px 0;
+  width: 30%
+}
+
+
+
+

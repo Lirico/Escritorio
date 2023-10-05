@@ -1,0 +1,9 @@
+function billboard(name, price = 30){
+  let letters = name.split("")
+  
+  let totalCost = 0;
+  
+  letters.forEach(letter => totalCost += price)
+  
+  return total
+} 

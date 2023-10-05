@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://db.onlinewebfonts.com/c/e47be9bfee22bfa6c8d57a09b6010c41?family=Silken+W01+Thread');
+
+/************* CUSTOM PROPERTIES **************/
+:root {
+    --first-color: #FFD4C4;
+    --first-light-color: #FFEBE3;
+    --first-dark-color: #FF9D7D;
+    --first-dark-alpha-color: #ff9d7dcc;
+    --second-color: #C8A6FF;
+    --second-dark-color: #C680FF;
+    --second-darkest-color: #9854C2;
+    --second-darkest-darkest-color: #562A7F;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --black-alpha-color: rgb(0, 0, 0, 0.3);
+    --grey-light-color: #C2C4C6;
+    --gray-soft-color: #707070;
+    --grey-color: #A4A6AA;
+    --grey-darkest-color: #414851;
+    --grey-dark-color: #83878C;
+    --first-font: 'Open Sans', sans-serif;
+    --second-font: 'Silken W01 Thread';
+    --third-font: 'Cedarville Cursive', cursive;
+}
+
+/************* RESET **************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--first-light-color);
+    overflow-x: hidden;
+    width: 75%;
+    margin: auto;
+    font-family: var(--first-font)
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/************* COMPONENTS **************/
+.suscribe-form {
+    display: flex;
+    gap: .5rem;
+    width: 65%;
+}
+.suscribe-form input, .suscribe-form button {
+    padding: .9rem 1rem;
+    width: 31%;
+}
+.suscribe-form input::placeholder {
+    color: var(--grey-color);
+}
+
+
+/************* UTILITIES **************/
+.btn {
+    background-color: var(--first-dark-color);
+    border: none;
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+  background-color: var(--first-dark-alpha-color);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 85%;
+}
+.filter {
+    background-color: var(--black-alpha-color);
+    width: 100%;
+    height: 100%;
+}
+.hero-container {
+    height: 55vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: var(--hero-image);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shadow-box {
+    box-shadow: 0px 0px 30px -15px var(--black-color);
+}
+
+/************* SITE STYLES **************/
+/********** HEADER **********/
+/******* BANNER *******/
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+.banner > a > img {
+    width: 200px;
+    margin: 10px 0;
+}
+/******* NAVIGATION *******/
+.navbar {
+    background-color: var(--second-darkest-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 2%;
+    color: var(--white-color);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+.navbar > h2 > a {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+    color: var(--white-color);
+}
+.menu {
+    background-color: var(--second-darkest-color);
+    display: flex;
+    column-gap: 3rem;
+}
+.menu-item {
+    color: var(--white-color);
+    font-size: rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.menu-item:hover {
+    color: var(--first-color);
+}
+
+/******* FOOTER *******/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--second-darkest-color);
+    padding: 3rem;
+}
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-menu h2 {
+    margin-bottom: 1.5rem;
+}
+.footer-menu > form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.footer-menu > form > h2 {
+    align-self: start;
+    color: var(--white-color);
+}
+.footer-menu > form > input, 
+.footer-menu > form > button {
+    width: 100%;
+}
+.footer-menu > .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white-color)
+}
+.social-media a {
+    color: var(--white-color);
+    line-height: 5;
+}
+.social-media i {
+    color: var(--black-color);
+    background-color: var(--first-color);
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: .7rem;
+}
+.copyright-banner {
+    text-align: center;
+    background-color: var(--second-darkest-darkest-color);
+    padding: 20px;
+    color: var(--white-color);
+    font-weight: bold;
+}
+.copyright-banner i {
+    color: red;
+}
+
+
+@media screen and (max-width: 578px) {
+    /************* RESET **************/
+    body {
+        width: 100%;
+    }
+}

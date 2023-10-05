@@ -1,0 +1,50 @@
+function htmlspecialchars(formData) {
+  const dataArr = formData.split("")
+  
+  for(let i = 0; i < dataArr.length; i++){
+    if(dataArr[i] === "<") {
+      dataArr[i] = "&lt;"
+    } else if(dataArr[i] === ">") {
+      dataArr[i] = "&gt;"
+    } else if(dataArr[i] === '"') {
+      dataArr[i] = "&quot;"
+    } else if(dataArr[i] === "&") {
+      dataArr[i] = "&amp;"
+    } 
+  }
+  
+  return dataArr.join("")
+}
+
+///////////////////////////////////////
+
+Best practices solution:
+
+function htmlspecialchars(formData) {
+  return formData.replace(/&/g, "&amp;")
+                 .replace(/"/g, "&quot;")
+                 .replace(/</g, "&lt;")
+                 .replace(/>/g, "&gt;");
+}
+
+
+//////////////////////////////
+Cleaver Solution:
+
+function htmlspecialchars(formData) {
+  return formData.replace(/[<>"&]/g, ch => ({"<":"&lt;",">":"&gt;","\"":"&quot;","&":"&amp;"}[ch]));
+}
+
+
+//////////////////////////////
+Interesting Object solution: 
+
+function htmlspecialchars(formData) {
+    const dict = {
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        '&': '&amp;',
+    };
+    return formData.replace(/[<>"&]/g, char => dict[char]);
+}

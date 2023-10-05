@@ -1,0 +1,13 @@
+function makeNegative(num) {
+  return num > 0 
+    ? -num
+    : num
+}
+
+///////////
+
+Smater solution:
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+/********** CUSTOM PROPERTIES *********/
+:root {
+    --first-color: rgb(85, 164, 85);
+    --first-alpha-color: rgba(69, 111, 69, 0.8);
+    --second-color: #785F44;
+    --white-color: #ffffff;
+    --first-font: 'Poller One', cursive;
+}
+
+/********** RESET *********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: var(--first-font);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+li {
+    list-style: none;
+}
+
+/********** UTILITES *********/
+.btn {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 0;
+    font-family: var(--first-font);
+    width: 200px;
+    height: 3.3rem;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: var(--first-alpha-color);
+}
+
+/********** SITE STYLES *********/
+/******** HEADER HOME *******/
+.header-home-container {
+    background-image: url("https://wallpapercave.com/wp/wp6850352.jpg");
+    height: 100vh;
+}
+/****** HEADER *****/
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5%;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.8s;
+}
+.nav-container > .logo {
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}
+.nav-container > .logo > img {
+    width: 3.75rem;
+}
+.navigation > .menu {
+    display: flex;
+    column-gap: 3.5rem;
+}
+.navigation > .menu > .menu-item > a {
+    transition: 0.3s;
+}
+.navigation > .menu > .menu-item > a:hover {
+    color: var(--second-color);
+}
+.nav-active {
+    background-color: var(--first-color);
+}
+
+/****** HOME *****/
+.home {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.home > h1 {
+    color: var(--white-color);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+} 
+
+/******** MAIN *******/
+.vh {
+    height: 100vh;
+}
+

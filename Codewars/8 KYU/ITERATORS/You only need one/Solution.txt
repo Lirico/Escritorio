@@ -1,0 +1,7 @@
+function check(a, x) {
+  return a.includes(x)
+}
+
+
+
+NOTA: Está en callbacks por que se podría resolver con iteraciones y comparadores.

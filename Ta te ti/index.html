@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ta Te Ti</title>
+    <style>
+        .board {
+            display: grid;
+            width: 330px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            background-color: pink;
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+
+    <script>
+        // Array que representa el estado del tablero
+        let board = ['', '', '', '', '', '', '', '', ''];
+
+        let currentPlayer = 'X';
+        const cells = document.querySelectorAll('.cell');
+
+        // Agregar eventos de clic a cada celda
+        cells.forEach((cell, index) => {
+            cell.addEventListener('click', () => {
+                makeMove(index);
+            });
+        });
+
+        // Función para realizar un movimiento en el tablero
+        function makeMove(index) {
+            // Verificar si la celda está vacía y el juego no ha terminado
+            if (board[index] === '' && !checkWinner()) {
+                board[index] = currentPlayer;
+                cells[index].textContent = currentPlayer;
+                cells[index].style.cursor = 'not-allowed';
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                checkWinner();
+            }
+        }
+
+        // Función para verificar si hay un ganador
+        function checkWinner() {
+            const winningCombinations = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8], // Filas
+                [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columnas
+                [0, 4, 8], [2, 4, 6] // Diagonales
+            ];
+
+            for (let combination of winningCombinations) {
+                const [a, b, c] = combination;
+                if (board[a] !== '' && board[a] === board[b] && board[a] === board[c]) {
+                    alert(`¡${board[a]} es el ganador!`);
+                    resetBoard();
+                    return true;
+                }
+            }
+
+            if (board.every(cell => cell !== '')) {
+                alert('¡Empate!');
+                resetBoard();
+                return true;
+            }
+
+            return false;
+        }
+
+        // Función para reiniciar el juego
+        function resetBoard() {
+            board = ['', '', '', '', '', '', '', '', ''];
+            currentPlayer = 'X';
+            cells.forEach(cell => {
+                cell.textContent = '';
+                cell.style.cursor = 'pointer';
+
+            });
+        }
+    </script>
+</body>
+
+</html>

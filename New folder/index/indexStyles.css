@@ -1,0 +1,33 @@
+/*Lista desordenada*/
+#ul-servicios{
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Audio local */
+audio {
+    width: 99%; 
+    border-radius: 5px ;
+    padding: 10px;
+}
+
+/* Video local*/
+video {
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px #0f0f0fc9;  
+    height: 300px; 
+    display: block; 
+    max-width: 0 auto; 
+    margin: 0 auto; 
+}
+
+/*Span estilo*/
+.lightblue{
+    color: #64CCC5;
+}
+
+.bold-underline{
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,15 @@
+function positiveSum(arr) {
+  let positiveNums = arr.filter(n => n > 0)
+  
+  return positiveNums.reduce((total, n) => {
+    return total + n
+  }, 0)
+}
+
+
+
+Smarter solution:
+
+function positiveSum(arr) {
+   return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+}

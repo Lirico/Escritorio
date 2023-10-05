@@ -1,0 +1,6 @@
+function doubleChar(str) {
+  let arr = str.split("")
+  let dobleChar = arr.map(char => char + char)
+  
+  return dobleChar.join("")  
+}

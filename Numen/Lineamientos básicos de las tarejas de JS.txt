@@ -1,0 +1,29 @@
+Correcion de tareas en JavaScript:
+
+
+- Dado que las tareas son automatizadas, es importante que el alumno suba la captura del resultado del test
+para corroborar que todo le dió bien.
+
+- En caso de que el alumno tenga hasta dos ejecicios mal o que no haya podido resolver, es importante que
+el tutor o profesor lo oriente con algunas pistas de como encarar esos ejericios.
+
+- Debido a que la corrección de tareas no es una instancia de consulta per se, si el alumno tiene mas de
+dos ejericios mal o sin resolver, corresponde que se le indique cuales son las instancias de consulta de las
+cuales dispone la academia para realizarlas, entendiendo por instancias de consulta las tutorias fijas y el 
+canal dudas-y-consultas de slack.
+
+- Es importante realizar al menos un colearning de repaso de cada hoja de la tarea para que los alumnos puedan
+contrastar su razonamiento de los ejercicios con los del docente y con los de los demás alumnos, pudiendo usarse
+para comparar las diferentes formas en que cada alumno lo pensó/investigó a modo de que cada alumno pueda tener
+un panorama más amplio de las diferentes formas en las que se puede resolver un mismo problema.
+
+- Si el alumno entrega antes de la clase siguiente debería darsele la garantía de correción antes de dicha clase.
+
+- Por otro lado, se debería informar de antemano que si el alumno entrega fuera del término antes mencionado no 
+podrá reclamar velocidad de correción, quedando a criterio del docente cuando corregirlo siempre y cuando esté dentro
+del plazo máximo que detallaré a continuación.
+
+- Para mantener una coherencia, el plazo máximo de entrega debería ser de 3 semanas, no aceptandose más trabajos 
+pasado ese plazo. Para esto el docente debería restringir en la configuración de la tarea las entregas posteriores
+al plazo previamente mencionado.
+

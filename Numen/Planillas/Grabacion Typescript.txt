@@ -1,0 +1,11 @@
+Typescript es una versión tipada, robusta y estable de
+JavaScript, que nos permite adelantarnos a la mayoria
+de las respuestas impredecibles del lenguaje, evitando
+el ingreso de datos inesperados o no deseados con
+mayor facilidad.
+
+Es una tecnología cada día más demandada en el mercado, 
+algo que ningún desarrollador que desee mantenerse 
+competitivo puede dejar tener en su stack de conocimientos.
+
+https://github.com/SosaAriel/DungeonNDragons

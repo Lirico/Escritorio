@@ -1,0 +1,18 @@
+function isPythagoreanTriple(integers) {
+  let c = Math.max(...integers)
+  let abArr = integers.filter(num => num < c)
+  
+  let [a, b] = abArr;
+  
+  return (Math.pow(a, 2) + Math.pow(b, 2)) === Math.pow(c, 2)
+}
+
+
+////////////////////// 
+
+Sort solution:
+
+function isPythagoreanTriple(integers) {
+  let massiv = integers.sort((a, b) => a - b)
+  return (massiv[0] ** 2 + massiv[1] ** 2 == massiv[2] ** 2)
+}

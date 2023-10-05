@@ -1,0 +1,142 @@
+
+/*ESTILOS GLOBALES PARA TODA LA PAGINA*/
+/*Estilos para el Body*/
+body {
+    font-family: 'Mooli', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+
+}
+
+/* Estilos para el header */
+header {
+    background-color: rgb(5, 59, 80);
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.863); 
+    
+}
+
+/* Estilos para el logo en el header */
+header img {
+    float: left; 
+    max-width: 80px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+/* Estilos para el contenido del nav bar */
+nav {
+    float: right; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 80px;
+    background-color: #ffffffea;
+    margin: 50px;
+    border: 1px solid #f0eaea;
+    border-radius: 20px ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.863);
+    
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #053B50;
+    padding: 5px;
+}
+
+/* Estilos para listas */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: "♡";
+}
+
+/* Estilos para enlaces externos */
+a[target="_blank"] {
+    text-decoration: underline;
+    color: #0073e6;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;    
+}
+.footer-text{
+    text-align: center;
+    
+}
+
+/* Estilos h1, h2,h3*/
+h1, h2, h3{
+    text-align: center;
+}
+
+/* Estilos p*/
+p{
+    text-align: center; 
+}
+
+/*Imagenes*/
+
+.img-style {
+    width: 600px; 
+    height: auto; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px #888888; 
+    display: block; 
+    margin: 0 auto;
+}
+
+/*Iframe*/
+.contenedor-iframe {
+    text-align: center; 
+}
+
+iframe {
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px #888888; 
+    margin: 0 auto; 
+}
+
+
+
+
+
+
+
+

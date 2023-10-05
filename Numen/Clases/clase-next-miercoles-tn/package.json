@@ -1,0 +1,25 @@
+{
+  "name": "clase-next-lunes-tn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "apifake": "json-server --port 5000 --watch src/assets/db.json",
+    "apisantos": "json-server --port 5000 --watch src/assets/santos.json"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.4.0",
+    "json-server": "^0.17.3",
+    "latest": "^0.2.0",
+    "next": "13.4.2",
+    "node": "^20.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

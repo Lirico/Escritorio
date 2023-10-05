@@ -1,0 +1,17 @@
+function removeChar(str){
+  const arr = str.split("") // Convert str to array
+  
+  arr.pop() // Remove last char
+  arr.shift() // Remove first char
+  
+ return arr.join("") // Convert array to str
+};
+
+
+////////////////////////////
+
+Smarter solution:
+
+function removeChar(str) {
+  return str.slice(1, -1);
+}

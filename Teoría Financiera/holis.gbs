@@ -1,0 +1,15 @@
+program {
+   return (sumar())
+}
+
+procedure Sumar() {
+    Poner()
+}
+
+function sumar() {
+    return (
+        choose
+            1 when(jorge)
+            2 otherwise
+    )
+}

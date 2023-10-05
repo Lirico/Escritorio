@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/contacto/contactoStyles.css">
+    <link rel="icon" href="/logo.png" type="image/svg+xml">
+    <title>Lotos Blancos</title>
+</head>
+<body>
+    <header>
+        <img src="/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="/index/index.html">Inicio</a></li>
+                <li><a href="/desarrollo/desarrollo.html">¿Qué es el Reiki?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="sidebar">
+        <h2>¿Donde nos encontramos?</h2>
+        <ul>
+            <li>Avenida Siempre Viva 742</li><br>
+            <li>Calle Falsa 123</li><br>
+            <li>Privet Drive 4</li><br>
+            <li>Grimmauld Place 12</li><br>
+            <li>Fondo de Bikini</li><br>
+            <li>Proximamente, en Westeros y Tatooine</li>
+        </ul>
+        <img src="/contacto/michi.jpg"  width="200" height="200" alt="Foto de michi" id ="michi-img">
+    </aside>
+    
+    <main id="contactos-main">
+       
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+                <form>
+                    <div id="name">   
+                        <label for="nombre">Nombre y apellido:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                    </div>
+    
+                    <div id="mail">
+                        <br><label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                    </div>
+    
+                    <div id="onechoice">
+                        <br><label for="genero">Genero:</label><br>
+                        <input id="rb1" type="radio" name="genero">
+                        <label for="rb1">Femenino</label><br>
+                        <input id="rb2" type="radio" name="genero">
+                        <label for="rb2">Masculino</label><br>
+                        <input id="rb3" type="radio" name="genero">
+                        <label for="rb3">Otro</label><br>
+                    </div>  
+
+                    <div id="combo">
+                        <br><label for="opciones">Ahora, queremos saber si alguna vez realizaste alguna terapia y 
+                            que constancia tenes. Selecciona una opcion:</label><br>
+                        <select name="opciones" id="opciones">
+                            <option value="opcion1">Nunca probe</option>
+                            <option value="opcion2">Probe, pero no soy constante</option>
+                            <option value="opcion3">Soy constante</option>
+                        </select>
+                    </div>
+    
+    
+                    <div id="miltichoice">
+                        <br><label for="preferencias">¿Cuales son tus intereses?</label><br>
+                        <input id="check1" type="checkbox" name="preferencias">
+                        <label for="check1">Reiki</label><br>
+                        <input id="check2" type="checkbox" name="preferencias">
+                        <label for="check2">Yoga</label><br>
+                        <input id="check3" type="checkbox" name="preferencias">
+                        <label for="check3">Tarot</label><br>
+                        <input id="check4" type="checkbox" name="preferencias">
+                        <label for="check4">Meditacion</label><br>
+                        <input id="check5" type="checkbox" name="preferencias">
+                        <label for="check5">Terapia de masajes</label><br>
+                    </div>
+    
+                    <div>
+                        <br><label for="mensaje">Otra informacion que nos quieras dar:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                    </div>
+                    
+                    <br><input type="submit" value="Enviar" id="boton-enviar"><br>
+                </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="footer-text">© 2023 Agostina Di Napoli</p>
+        <p class="footer-text"><a href="https://www.linkedin.com/in/agostina-di-napoli-42648a1b5/" target="_blank">Contactar</a></p>
+    </footer>
+</body>
+</html>

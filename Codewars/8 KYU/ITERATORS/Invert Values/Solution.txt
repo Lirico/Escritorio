@@ -1,0 +1,18 @@
+function invert(array) {
+    if(!array) return []
+  
+   const inverseArr = array.map(n => 
+     n > 0
+       ? -n
+       : -(n)
+   )
+   
+   return inverseArr
+}
+
+
+///////////////////
+
+Smarter solution:
+
+const invert = array => array.map(num => -num);

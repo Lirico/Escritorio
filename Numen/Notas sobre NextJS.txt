@@ -1,0 +1,27 @@
+- Comando: npx create-next-app@latest
+
+- Explicar para que sirve cada carpeta:
+	- public: Archivos estáticos
+	- styles: Estilos globales y estilos por componente
+	- gitignore: Contiene todas las carpetas que no vamos a subir al repositorio.
+	- next.config.js: Configuración interna de Next, no hace falta tocar nada.
+
+- next/head: Permite cambiar las etiquetas y meta etiquetas del head del documento a pesar de no estar usando una hoja HTML
+- next/image: Nos permite optimizar las cargas de las imagenes
+
+- npm run dev: Cuando ejecutamos por primera vez este comando, además de levantar el server, crea una carpeta más llamada .next que posee diferentes caches y archivos que se han creado para hacer menos operaciones cada vez que levantemos
+el servidor nuevamente. Se agrega automáticamente al gitignore.
+
+- La hoja de _app.js nos permite renderizar toda nuestra aplicación. Para ello hace un spread operator de todas las paginas que creamos en la carpeta pages y las renderiza, cada una en su propio directorio. 
+Si agregamos otros componentes dentro de App pero fuera del spread operator de Component, estos apareceran en todas las páginas como en react-router-dom cuando colocamos componentes dentro de Router pero fuera de Routes.
+
+- En la carpeta de pages es posible tener directorios dinámicos. Si queremos entrar al directorio article/1 por ejemplo solo
+hay que crear una carpeta dentro de pages y dentro colocar una hoja con el valor [id].js y luego pasar diferentes argumentos para ese parametro.
+
+- Los module de CSS funcionan como un objeto gigante. Podemos importar módulos desde la carpeta de styles y luego llamar a las clases como si fuesen propiedades de objeto en el classname de cada elemento.
+
+- También es posible colocar estilos con scope usando <style jsx>{` `}<style>. Estos solo se conservan dentro del componente donde se utilizan y van dentro del envoltorio del componente que puede ser un fragment o un div o cualquier otro bloque.
+
+- next/link: Explicar el componente y usar el ejemplo de ver la parte de redes y como recarga entre <a> y <Link>
+
+- useRouter: Es un hook para traernos un router. Nos permite navegar de forma programatica para poder navegar entre paginas o secciones.

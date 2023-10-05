@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --first-font: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--first-font)
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.miniatura {
+  height: 720px;
+  width: 1280px;
+  background-color: white;
+  border: 1px solid black;
+} 
+
+.miniatura > .left-img-container {
+  background-image: url(/images/yo.png);
+  height: 720px;
+  width: 833px;
+  transform: scaleX(-1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  clip-path: polygon(1280px 0px, 520px 1280px, 675px 1280px, 15px 0px);
+}
+
+.miniatura > .diagonal {
+  border-bottom: 10px solid #FF7A00;
+  width: 64%;
+  transform: rotate(-63deg);
+  transform-origin: right;
+  position: relative;
+  bottom: 728px;
+}
+
+.miniatura .right-img-container {
+  background-image: url(/images/html-logo.webp);
+  height: 720px;
+  width: 857px;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: left;
+  position: relative;
+  left: 650px;
+  bottom: 730px;;
+  /* clip-path: polygon(1280px 450px, 0px 1280px, 32px 722px, 855px -887px); */
+}
+
+.miniatura .texto {
+  font-size: 5rem;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 1430px;
+  left: 50px;
+  color: white;
+  text-shadow: 1px 1px 15px  black;
+}
+
+.miniatura .texto > span {
+  font-size: 4.3rem;
+}

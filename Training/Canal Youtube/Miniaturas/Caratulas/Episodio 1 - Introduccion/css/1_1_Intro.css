@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --black-color: black;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    background-color: var(--black-color);
+}
+
+.container {
+    background-color: #E44D26;
+    border: 2px white solid;
+    color: white;
+    font-size: 4rem;
+    width: 1280px;
+    height: 720px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    line-height: 0;
+    text-shadow: 3px 0 0 var(--black-color), -3px 0 0 var(--black-color), 0 3px var(--black-color), 0 -3px 0 var(--black-color), 3px 3px 3px var(--black-color); 
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Portfolio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <style>
+        /* PROPIEDADES PERSONALIZADAS */
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        .custom-toggler.navbar-toggler {
+            border-color: rgb(255,255,255);
+        } 
+
+        /*.********  RESET **********.*/
+        body {
+            background-image: url(/images/home.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        /*.********  SITE STYLES **********.*/
+        .cv-responsive {
+            width: 25%;
+        }
+
+        @media screen and (max-width: 576px) {
+            body {
+                background-position: 80% 0%;
+                background-size: cover;
+                height: 100vh;
+            }
+            .cv-responsive {
+                width: 75%;
+            }
+        }   
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav style="z-index: 99995" class="navbar navbar-expand-lg position-fixed w-100 bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Darth Vader</a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="me-auto"></div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#curriculum">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#proyects">Proyects</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="vh-100 w-100 d-flex flex-column justify-content-center px-3 px-md-5 text-white">
+        <h1 class="mb-3">Darth Vader</h1>
+        <h2>Hire the dark side <br> of the force</h2>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="about" class="bg-white py-5 d-flex flex-column align-items-center">
+        <h2 class="pb-3 text-danger">About Me</h2>
+        <div class="container">
+            <div class="row">
+              <div class="col col-12 col-md-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                <img style="width: 200px" src="https://i.pinimg.com/originals/5a/77/43/5a77436853582ca7104cfc6c12a4b72a.jpg" alt="dvface">
+              </div>
+              <div class="col col-12 col-md-6 col- d-flex justify-content-center align-items-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ea assumenda amet, nemo, exercitationem reiciendis fugiat earum atque quidem labore nesciunt unde sint vitae perferendis blanditiis excepturi nihil id non ex facere vel, hic tempore voluptatum maxime! Exercitationem, quaerat soluta.
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="bg-danger py-5 d-flex flex-column align-items-center">
+        <h2 class="pb-3 text-white">My team</h2>
+        <div class="container">
+            <div class="row">
+              <div class="col col-12 col-md-4 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/sidious.jpg" style="height: 285px; object-fit: cover;" class="card-img-top" alt="sidious">
+                    <div class="card-body">
+                      <h5 class="card-title">Darth Sidious</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col col-12 col-md-4 col- d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/Tarkin1.webp" style="height: 285px; object-fit: cover;" class="card-img-top" alt="tarkin">
+                    <div class="card-body">
+                      <h5 class="card-title">Tarkin</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col col-12 col-md-4 col- d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/veers.jpg" style="height: 285px; object-fit: cover;" class="card-img-top" alt="veer">
+                    <div class="card-body">
+                      <h5 class="card-title">General Veer</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+     <!-- CURRICULUM -->
+    <section id="curriculum" class="container bg-white d-flex flex-column align-items-center py-5 cv-responsive">
+        <img src="/images/cv.webp" class="w-100 mb-3 rounded" alt="cv">
+        <button class="btn btn-danger w-75">Download CV</button>
+    </section>
+
+     <!-- PROYECTS -->
+     <section id="proyects" class="bg-dark py-5 d-flex flex-column align-items-center">
+        <h2 class="pb-3 text-white">Proyects</h2>
+        <div class="container">
+            <div class="row">
+              <div class="col col-12 col-md-6 d-flex flex-column justify-content-center align-items-center mb-5 mb-md-0">
+                <img src="/images/resumo1.jpg" class="w-75 mb-3 rounded" alt="resumo1">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-light bg-danger text-white w-75 text-uppercase" data-bs-toggle="modal" data-bs-target="#resumo1">
+                    Resume
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade mt-5" id="resumo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Star Wars I, II, III</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/lJmnFeZwxpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6 col- d-flex flex-column justify-content-center align-items-center">
+                <img src="/images/resumo2.jpg" class="w-75 mb-3 rounded" alt="resumo1">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-light bg-danger text-white w-75 text-uppercase" data-bs-toggle="modal" data-bs-target="#resumo2">
+                    Resume
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade mt-5" id="resumo2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Star Wars IV, V, VI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/IeGSHwM3bws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+              <div class="col col-12 col-md-8 d-flex flex-column justify-content-center mb-3 mb-md-0">
+                <a href="index.html">
+                    <img src="/images/logo.webp" class="w-25 mb-3" alt="dvface">
+                </a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ea assumenda amet, nemo, exercitationem reiciendis fugiat earum atque quidem labore nesciunt unde sint vitae perferendis blanditiis excepturi nihil id non ex facere vel, hic tempore voluptatum maxime! Exercitationem, quaerat soluta.</p>
+              </div>
+              <div class="col col-12 col-md-4 col- d-flex flex-column justify-content-center">
+                <a href="#" class="text-danger fw-bold text-decoration-none mb-2">Facebook</a>
+                <a href="#" class="text-danger fw-bold text-decoration-none mb-2">Instagram</a>
+                <a href="#" class="text-danger fw-bold text-decoration-none mb-2">Twitter</a>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+
+</html>

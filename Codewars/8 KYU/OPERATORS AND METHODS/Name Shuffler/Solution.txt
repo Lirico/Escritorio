@@ -1,0 +1,12 @@
+function nameShuffler(str){
+  return str.split(" ").reverse().join(" ")
+}
+
+
+
+////////////////
+
+Regex solution:
+
+const nameShuffler = str =>
+  str.replace(/([^\s]+) ([^\s]+)/, `$2 $1`);

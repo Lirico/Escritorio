@@ -1,0 +1,38 @@
+/* Boton enviar*/
+#boton-enviar {
+    background-color: #176B87; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+/* h2, p*/
+h2, p{
+    text-align: left;
+}
+/*Aside estilos*/
+#sidebar {
+    background-color: #eee;
+    padding: 80px;
+    border-radius: 10px;
+    float: right; 
+    width: 250px;
+    height: 550px;
+    box-shadow: 3px 3px 5px #888888;
+    margin: 100px;  
+}
+
+
+/*Imagen*/
+#michi-img{
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px #888888; 
+    display: block; 
+    margin: 0 auto;
+}
+
+
